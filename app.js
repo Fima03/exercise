@@ -44,15 +44,15 @@ var bmi2 = bmi.toFixed(2);//membatasi angka desimal
 if(bmi2 < 18.5){
 	kondisi = "dan ternyata berat badan saya dibawah normal"
 }else if(bmi2 > 18.5 && bmi2 < 25){
-	kondisi = "dan ternyata berat saya normal"
+	kondisi = "dan ternyata berat badan saya normal"
 }else if(bmi2>=25 && bmi2<30 ) {
-	kondisi = "dan ternyata berat saya sudah overweight"
+	kondisi = "dan ternyata berat badan saya sudah overweight"
 }else if(bmi2 >= 30 && bmi2 <35){
-	kondisi ="dan ternyata berat saya sudah obesitas kelas 1"
+	kondisi ="dan ternyata berat badan saya sudah obesitas kelas 1"
 }else if(bmi2 >= 35 && bmi2 <40){
-	kondisi ="dan ternyata berat saya sudah obesitas kelas 2"
+	kondisi ="dan ternyata berat badan saya sudah obesitas kelas 2"
 }else if(bmi2 >= 40){
-	kondisi ="dan ternyata berat saya sudah obesitas kelas 3"
+	kondisi ="dan ternyata berat badan saya sudah obesitas kelas 3"
 }
 
 console.log(`Halo, nama saya ${name} berat saya ${berat}, tinggi saya ${tinggi} cm. Saya lahir pada tanggal ${birthday}, saat ini nilai BMI saya ${bmi2},${kondisi}. Saya meminum air putih sebanyak ${minum}ml perhari, dan kelihatannya saya ${minum < 1500 ? `masih kurang minum air putih dan saya harus meminum sebanyak ${1500-minum}ml lagi` : "sudah cukup minum air putih"}`)
