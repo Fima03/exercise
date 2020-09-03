@@ -38,7 +38,8 @@ var minum = 1000 ; //ml
 var tinggi2 = tinggi / 100;//merubah satuan tinggi dari cm ke m
 
 var bmi = berat / Math.pow(tinggi2,2);
-var bmi2 = Math.round(bmi);//membulatkan hasil bmi
+var bmi2 = bmi.toFixed(2);//membatasi angka desimal
+/*---jika ingin dibulatkan bisa pakai ini : var bmi2 = Math.round(bmi);*/
 
 if(bmi2 < 18.5){
 	kondisi = "dan ternyata berat badan saya dibawah normal"
@@ -54,7 +55,7 @@ if(bmi2 < 18.5){
 	kondisi ="dan ternyata berat saya sudah obesitas kelas 3"
 }
 
-console.log(`Halo, nama saya Kechap Tamazola berat saya ${berat}, tinggi saya ${tinggi} cm. Saya lahir pada tanggal ${birthday}, saat ini nilai BMI saya ${bmi2},${kondisi}. Saya meminum air putih sebanyak ${minum}ml perhari, dan kelihatannya saya ${minum < 1500 ? `masih kurang minum air putih dan saya harus meminum sebanyak ${1500-minum}ml lagi` : "sudah cukup minum air putih"}`)
+console.log(`Halo, nama saya ${name} berat saya ${berat}, tinggi saya ${tinggi} cm. Saya lahir pada tanggal ${birthday}, saat ini nilai BMI saya ${bmi2},${kondisi}. Saya meminum air putih sebanyak ${minum}ml perhari, dan kelihatannya saya ${minum < 1500 ? `masih kurang minum air putih dan saya harus meminum sebanyak ${1500-minum}ml lagi` : "sudah cukup minum air putih"}`)
 
 
 
